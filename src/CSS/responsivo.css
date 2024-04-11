@@ -1,0 +1,43 @@
+/*MEDIA QUERY*/
+
+@media(max-width: 1280px) { /*sobrescreve com as seguintes configuracoes em telas do tamanho maximo especificado*/
+    
+    .cabecalho{
+        padding: 30px;
+    }
+
+    .home {flex-direction: column;
+        align-items: center; /*para elementos que nao sao textos*/
+        margin: 50px 0;
+        gap: 30px; /*GAP: espacamento entre todos os itens da classe. No index foi definido como 50px, porem é mto para telas menores*/
+    }
+
+    .home .informacoes {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .projetos conteiner-projetos {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    
+    .home .informacoes h1 {
+        font-size: 30px;
+    }
+
+    .home .informacoes p {
+        font-size: 16px;
+    }
+    
+    .home .container-foto img{
+        max-width: 320px;
+    }
+
+    .projetos{
+        padding: 30px;
+    }
+}

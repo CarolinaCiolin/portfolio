@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carolina Ciolin - Front-end Developer</title>
+
+    <!-- LINK: importa biblioteca externa-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Vampiro+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css"> <!-- importante comecar com o RESET, pois o CSS respeita a ordem (cascata)-->
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="#">
+        <h1 class="logo">CC</h1>
+      </a>
+
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="#projetos">My Projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="home">
+      <div class="informacoes">
+        <h1>Hello! I am Carolina Ciolin</h1>
+        <p>Front-end developer and digital designer 💻🎨</p>
+        <p>
+          I am always challenging myself with new projects and learning new applications.
+        </p>
+        <p>I am a fan of series, animes and an eternal bronze player on League of Legends 🏹</p>
+
+        <ul class="redes-sociais"><!--I: icone-->
+          <li>
+            <a
+              href="https://www.linkedin.com/in/carolinaciolin/"
+              title="Go to LinkedIn"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.behance.net/carolinaciolin"
+              title="Go to Behance"
+              target="_blank"
+            >
+            <i class="fab fa-behance"></i></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://github.com/CarolinaCiolin"
+              title="Go to GitHub"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.instagram.com/carolinaciolin"
+              title="Go to Instagram"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container-foto">
+        <div class="foto sombra-interna">
+          <img
+            src="./src/imagens/foto-editada-sembg.png"
+            alt="Profile picture of Carolina"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2 class="titulo">My Projects</h2>
+
+      <div class="container-projetos"> <!-- o nome CONTAINER é geralmente usado para esclarecer o agrupamento de objetos-->
+        
+        <div class="projeto ativo">
+          <a href="https://www.behance.net/gallery/184936761/Super-Nyan-Nyan" target="_blank">
+            <!-- PLACEHOLDER para quando ainda não tiver a imagem. Só digitar o tamanho desejado ali no final-->
+            <img
+              src="./src/imagens/snn-cropped.jpg"
+              alt="Project Super Nyan Nyan"
+            />
+            <h3>Super Nyan Nyan</h3>
+
+            <div class="informacoes-projeto">
+              <p>Super Nyan Nyan</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto ativo">
+          <a
+            href="https://www.behance.net/gallery/184890079/Arkha"
+            target="_blank"
+          >
+            <img
+              src="./src/imagens/arkha-1.jpg"
+              alt="Project Arkha"
+            />
+            <h3>Project Arkha</h3>
+            <div class="informacoes-projeto">
+              <p>Project Arkha</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto ativo">
+          <a
+            href="https://www.behance.net/gallery/191532051/Hot-Chocolate"
+            target="_blank"
+          >
+            <img
+              src="./src/imagens/chocolate-cropped.jpg"
+              alt="Project Hot Chocolate"
+            />
+            <h3>Hot Chocolate</h3>
+            <div class="informacoes-projeto">
+              <p>Hot Chocolate</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto ativo">
+          <a href="https://www.behance.net/gallery/184885673/Bulbasaur" target="_blank">
+            <img
+              src="./src/imagens/bulbasaur.png"
+              alt="Project Bulbasaur"
+            />
+            <h3>Bulbasaur</h3>
+            <div class="informacoes-projeto">
+              <p>Bulbasaur</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://www.behance.net/gallery/184893363/Louis" target="_blank">
+            <img
+              src="./src/imagens/loius-cropped.png"
+              alt="Project Louis"
+            />
+            <h3>Louis</h3>
+            <div class="informacoes-projeto">
+              <p>Louis</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://www.behance.net/gallery/192269831/Aphelios" target="_blank">
+            <img
+              src="./src/imagens/aphelios-3.jpg"
+              alt="Project Aphelios"
+            />
+            <h3>Aphelios</h3>
+            <div class="informacoes-projeto">
+              <p>Aphelios</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://www.behance.net/gallery/173458249/Rusty-Lake" target="_blank">
+            <img
+              src="./src/imagens/rusty lake-3.png"
+              alt="Project Rusty Lake"
+            />
+            <h3>Rusty Lake</h3>
+            <div class="informacoes-projeto">
+              <p>Rusty Lake</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://www.behance.net/gallery/173457949/Fairy" target="_blank">
+            <img
+              src="./src/imagens/fairy.png"
+              alt="Project Fairy"
+            />
+            <h3>Fairy</h3>
+            <div class="informacoes-projeto">
+              <p>Fairy</p>
+              <p>🔗 Ver no Behance</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <button class="btn-mostrar-projetos">Show more</button>
+    </section>
+
+    <script src="./src/js/index.js"></script>
+
+  </body>
+</html>

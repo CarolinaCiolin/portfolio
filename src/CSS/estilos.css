@@ -1,0 +1,239 @@
+html {
+	color: #fff;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Poppins", sans-serif; /*se nao tiver Poppins instalado, usar alguma fonte sans-serif*/
+	margin: 0 auto; /*centralizar o conteudo do site. margin 0 em cima e embaixo e AUTO na esquerda e direita. tb poderia ser: 0 auto 0 auto*/
+	max-width: 1120px;
+	background: linear-gradient(150deg,#171717,#313131);
+	background-size: 120% 120%;
+}
+
+.cabecalho {
+	/*background-color: blue;*/
+	display: flex; /*FLEX funciona com o conceito de pai e filhos. Altera tudo o que estiver dentro do elemento que possui a classse em questao. O FLEX tem por padrao um flex-direction: row*/
+    /*flex-direction: row;*/
+	justify-content: space-between; /*propriedade do FLEX*/
+	align-items: center; /*propriedade do FLEX*/
+	padding: 30px 15px;
+}
+
+.cabecalho .logo { /*O espaço depois do nome de classe significa que tratará de um elemento descendente*/
+	/*background-color: orange;*/
+	width: 65px; 
+	height: 65px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 65px;
+	font-family: "Courgette", sans-serif;
+	transition: 0.2s; /*transicao para tudo o que acontecer neste elemento. Neste caso, para o a:hover nao ficar tao abrupto*/
+}
+
+.cabecalho a:hover .logo {
+	color: #cb0f31;
+	border: 2px solid #cb0f31;
+}
+
+.cabecalho .menu li a {
+	font-size: 24px;
+	font-family: "Courgette", sans-serif;
+	text-transform: capitalize;
+	padding: 10px 20px;
+	transition: 0.2s;
+}
+
+.cabecalho .menu li a:hover {
+	background-color: #cb0f31;
+	color: #000;
+	border-radius: 50px;
+	/*border: 2px solid #cb0f31*/;
+}
+
+.home {
+	/* background-color: green;*/
+	display: flex;
+	min-height: calc(100vh - 125px); /*VH: viewport height ou altura da janela. Neste caso para deixar a .home ocupar toda a altura da janela. 125px seria a altura do menu*/
+	align-items: center;
+	gap: 50px; /*espaco entre os elementos filhos*/
+	justify-content: space-between;
+}
+
+.home .informacoes {
+	/*background-color: black;*/
+	display: flex;
+	flex-direction: column; /*sem isso os itens ficam um do lado do outro*/
+	gap: 15px;
+	letter-spacing: 2px; /* = tracking*/
+	padding: 0 15px;
+	max-width: 50%;
+}
+
+.home .informacoes h1 {
+	font-family: "Courgette", sans-serif;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.home .informacoes p {
+	font-family: "Raleway", sans-serif;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.home .redes-sociais {
+	/*background-color: orange;*/
+	display: flex;
+	gap: 20px;
+}
+
+.home .redes-sociais a i {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	/*padding: 12px;*/
+	text-align: center;
+	line-height: 50px;
+	font-size: 26px; /*para aumentar o tamanho dos icones*/
+	transition: 0.3s;
+}
+
+.home .redes-sociais a i:hover {
+	color: #cb0f31;
+	border: 1px solid #a70d29;
+	transform: scale(1.1);/* aumenta o tamanho do elemento*/
+}
+
+.home .container-foto .foto {
+	/*background-color: red;*/
+	max-width: 450px;
+	border-radius: 50%;
+}
+
+.home .container-foto img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+.home .foto.sombra-interna {
+	background: linear-gradient(to right, #e2277c, #cb0f31, #000000); /*site para pegar os gradientes: MDN*/
+	background-size: 180% 180%;
+	animation: gradient-animation 5s ease infinite; /*torna a animacao visivel*/
+}
+
+.projetos {
+	/*background-color: purple;*/
+	padding: 30px 0 70px;
+}
+
+.projetos .titulo {
+	text-align: center;
+	font-family: "Courgette", sans-serif;
+	padding: 60px 0;
+	font-size: 45px;
+	font-weight: 500;
+	/*text-transform: uppercase;*/
+}
+
+.projetos .container-projetos {
+	/*background-color: yellow;*/
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap; /*para responsividade*/
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.projetos .projeto {
+	max-width: 250px;
+	max-height: 250px;
+	position: relative;
+	display: none;
+}
+
+.projetos .projeto.ativo {
+	display: block;
+}
+
+.projetos .projeto img {
+	height: 100%;
+}
+
+.projetos .projeto p {
+	margin-bottom: 10px;
+}
+
+.projetos .projeto h3 {
+	display: none;
+	background-color: #040203;
+	width: 100%;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: absolute; /*RELATIVE no elemento pai e ABSOLUTE no filho. pssibilita mexer em sua posicao mais facilmente*/
+	bottom: 0;
+}
+
+.projetos .projeto .informacoes-projeto {
+	background-color: #040203;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: 600;
+	opacity: 0;
+	transition: 0.3s;
+	padding: 20px;
+}
+
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+	opacity: 0.7;
+	background-color: #000;
+	border: 1px solid #cb0f31;
+}
+
+.projetos .btn-mostrar-projetos {
+	font-family: "Courgette", sans-serif;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	color: #fff;
+	width: 200px;
+	padding: 10px 20px;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.projetos .btn-mostrar-projetos:hover {
+	background-color: #cb0f31;
+	color: #000;
+	border: none;
+	transition: 0.3s;
+}
+
+.projetos .btn-mostrar-projetos.remover {
+	display: none;
+}
+
+@keyframes gradient-animation { /*ANIMACAO DO GRADIENTE*/
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
