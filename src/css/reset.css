@@ -1,0 +1,23 @@
+/*CSS RESET serve para resetar os estilos que o próprio navegador já coloca e consequentemente nao atrapalhar os estilos a serem criados. Há resets prontos na internet.*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul{
+    list-style: none; /* tira as bolinhas default de itens*/
+}
+
+img{
+    max-width: 100%;
+}
