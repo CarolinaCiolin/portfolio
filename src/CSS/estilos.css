@@ -86,10 +86,8 @@ body {
 
 .home .redes-sociais {
 	/*background-color: orange;*/
-	color: #fff;
 	display: flex;
 	gap: 20px;
-	list-style: none;
 }
 
 .home .redes-sociais a i {
