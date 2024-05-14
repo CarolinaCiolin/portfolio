@@ -1,4 +1,8 @@
-<center><h1><font color="#CB0F31">Portfolio</font></h1></center>
+<div align="center">
+
+# Portfolio
+
+</div>
 
 My first project 🎆
 
