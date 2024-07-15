@@ -1,0 +1,12 @@
+footer{
+    background-color: #000;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > p{
+    font-size: 1.4rem;
+}
+

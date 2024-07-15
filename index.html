@@ -1,237 +1,278 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carolina Ciolin - Front-end Developer</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- LINK: importa biblioteca externa-->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-    />
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/hero.css">
+    <link rel="stylesheet" href="./src/css/about-me.css">
+    <link rel="stylesheet" href="./src/css/abilities.css">
+    <link rel="stylesheet" href="./src/css/projects.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/font-awesome.css">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Vampiro+One&display=swap" rel="stylesheet">
+    <link rel="shortcul icon" href="./src/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <title>Carolina Ciolin - Front-end Developer</title>
+</head>
+<body>
+    <header class="max-w-1200">
+        <div class="logo">CC</div>
+        <nav class="menu">
+            <input type="checkbox" id="menu-hamburger" />
+            <label for="menu-hamburger">
+                <div class="hamburger-container">
+                    <span class="hamburger"></span>
+                </div>
+            </label>
 
-    <link rel="stylesheet" href="./src/css/reset.css"> <!-- importante comecar com o RESET, pois o CSS respeita a ordem (cascata)-->
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
-
-  </head>
-  <body>
-    <header class="cabecalho">
-      <a href="#">
-        <h1 class="logo">CC</h1>
-      </a>
-
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="#projetos">My Projects</a>
-          </li>
-        </ul>
-      </nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#abilities">Abilities</a></li>
+                <li><a href="#projects">My Projects</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="home">
-      <div class="informacoes">
-        <h1>Hello! I am Carolina Ciolin</h1>
-        <p>Front-end developer and digital designer 💻🎨</p>
-        <p>
-          I am always challenging myself with new projects and learning new applications.
-        </p>
-        <p>I am a fan of series, animes and an eternal bronze player on League of Legends 🏹</p>
-
-        <ul class="redes-sociais"><!--I: icone-->
-          <li>
-            <a
-              href="https://www.linkedin.com/in/carolinaciolin/"
-              title="Go to LinkedIn"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.behance.net/carolinaciolin"
-              title="Go to Behance"
-              target="_blank"
-            >
-            <i class="fab fa-behance"></i></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://github.com/CarolinaCiolin"
-              title="Go to GitHub"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://www.instagram.com/carolinaciolin"
-              title="Go to Instagram"
-              target="_blank"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="container-foto">
-        <div class="foto sombra-interna">
-          <img
-            src="./src/imagens/foto-editada-sembg.png"
-            alt="Profile picture of Carolina"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="projetos" id="projetos">
-      <h2 class="titulo">My Projects</h2>
-
-      <div class="container-projetos"> <!-- o nome CONTAINER é geralmente usado para esclarecer o agrupamento de objetos-->
-        
-        <div class="projeto ativo">
-          <a href="https://www.behance.net/gallery/184936761/Super-Nyan-Nyan" target="_blank">
-            <!-- PLACEHOLDER para quando ainda não tiver a imagem. Só digitar o tamanho desejado ali no final-->
-            <img
-              src="./src/imagens/snn-cropped.jpg"
-              alt="Project Super Nyan Nyan"
-            />
-            <h3>Super Nyan Nyan</h3>
-
-            <div class="informacoes-projeto">
-              <p>Super Nyan Nyan</p>
-              <p>🔗 Ver no Behance</p>
+    <main class="max-w-1200">
+        <section id="hero" class="flex-column">
+            <div class="hero-container">
+                <div class="hero-info flex-column">
+                    <p>Hello ✨</p>
+                    <h1>I am Carolina Ciolin</h1>
+                    <p>Front-end Developer</p>
+                    <nav class="social-media">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/carolinaciolin/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/CarolinaCiolin" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.behance.net/carolinaciolin" target="_blank">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/carolinaciolin/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <address>
+                        <a href="mailto:carolinaciolin@gmail.com" class="email">carolinaciolin@gmail.com</a>
+                    </address>
+                </div>
+                <div class="profile-picture-bg">
+                    <img src="./src/imagens/foto-perfil.png" alt="Profile picture of Carolina" class="profile-picture">
+                </div>
             </div>
-          </a>
-        </div>
-
-        <div class="projeto ativo">
-          <a
-            href="https://www.behance.net/gallery/184890079/Arkha"
-            target="_blank"
-          >
-            <img
-              src="./src/imagens/arkha-1.jpg"
-              alt="Project Arkha"
-            />
-            <h3>Project Arkha</h3>
-            <div class="informacoes-projeto">
-              <p>Project Arkha</p>
-              <p>🔗 Ver no Behance</p>
+            <i class="fas fa-arrow-down"></i>
+        </section>
+        <section id="about-me" class="flex-column">
+            <h2>About Me</h2>
+            <div class="about-me-container">
+                <div class="illustrations">
+                </div>
+                <div class="about-me-info flex-column">
+                <p>
+                    Hello! My name is Carolina Ciolin, and I am a front-end developer in training.
+                </p>
+                <p>
+                    I am very passionate about the technology field and confident that I can contribute to any team with my skills.
+                    I am constantly challenging myself with new projects and participating in programming communities to seek feedback from other developers. I also try to help others with what I have already learned.
+                </p>
+                <p>
+                    Additionally, I am a designer and illustrator 🎨, a fan of series and animes, and an eternal bronze player in League of Legends 🏹.
+                </p>
+                <a href="./src/CV - FRONTEND - CAROLINA CIOLIN.pdf" target="_blank" class="btn-cv">View my CV</a>
+                </div>
             </div>
-          </a>
-        </div>
-
-        <div class="projeto ativo">
-          <a
-            href="https://www.behance.net/gallery/191532051/Hot-Chocolate"
-            target="_blank"
-          >
-            <img
-              src="./src/imagens/chocolate-cropped.jpg"
-              alt="Project Hot Chocolate"
-            />
-            <h3>Hot Chocolate</h3>
-            <div class="informacoes-projeto">
-              <p>Hot Chocolate</p>
-              <p>🔗 Ver no Behance</p>
+        </section>
+        <section id="abilities" class="flex-column">
+            <h2>Abilities</h2>
+            <div class="abilities-container">
+                <div class="abilities-item flex-column">
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <h3>HTML 5</h3>
+                    <ul class="flex-column">
+                        <li>Semantic markup;</li>
+                        <li>Forms;</li>
+                        <li>Multimedia Embedding;</li>
+                        <li>Linking.</li>
+                    </ul>
+                </div>
+                <div class="abilities-item flex-column">
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <h3>CSS 3</h3>
+                    <ul class="flex-column">
+                        <li>CSS Grid Layout;</li>
+                        <li>Flexbox;</li>
+                        <li>Responsive Design;</li>
+                        <li>Pseudo-classes and Pseudo-elements;</li>
+                        <li>Media queries;</li>
+                        <li>CSS Custom Properties;</li>
+                        <li>Box Model.</li>
+                    </ul>
+                </div>
+                <div class="abilities-item flex-column">
+                    <i class="devicon-git-plain"></i>
+                    <h3>Git</h3>
+                    <ul class="flex-column">
+                        <li>Basic commands;</li>
+                        <li>Branching and Merging;</li>
+                        <li>Remote Repositories;</li>
+                        <li>Gitignore.</li>
+                    </ul>
+                </div>
+                <div class="abilities-item flex-column">
+                    <i class="devicon-github-original"></i>
+                    <h3>GitHub</h3>
+                    <ul class="flex-column">
+                        <li>Creating and Managing Repositories;</li>
+                        <li>Forking Repositories;</li>
+                        <li>GitHub Pages;</li>
+                        <li>Creating and Managing Pull Requests.</li>
+                    </ul>
+                </div>
+                <div class="abilities-item flex-column">
+                    <i class="devicon-figma-plain"></i>
+                    <h3>Figma</h3>
+                    <ul class="flex-column">
+                        <li>Prototyping;</li>
+                        <li>Component Creation and Management;</li>
+                        <li>Auto layout;</li>
+                        <li>Responsive Design;</li>
+                        <li>Design Systems.</li>
+                    </ul>
+                </div>
             </div>
-          </a>
-        </div>
-
-        <div class="projeto ativo">
-          <a href="https://www.behance.net/gallery/184885673/Bulbasaur" target="_blank">
-            <img
-              src="./src/imagens/bulbasaur.png"
-              alt="Project Bulbasaur"
-            />
-            <h3>Bulbasaur</h3>
-            <div class="informacoes-projeto">
-              <p>Bulbasaur</p>
-              <p>🔗 Ver no Behance</p>
+        </section>
+        <section id="projects" class="flex-column">
+            <H2>My Projects</H2>
+            <div class="projects-list">
+                <div class="project-container flex-column">
+                    <div class="project-img-container">
+                        <img src="./src/imagens/huddle-2.png" alt="Huddle Landing Page">
+                        <a href="https://carolinaciolin.github.io/huddle-landing-page/" target="_blank" class="github-link">
+                            🔗 Ver no GitHub Pages
+                        </a>
+                    </div>
+                    
+                    <div class="project-description flex-column">
+                        <h3>Huddle Landing Page</h3>
+                        <p>
+                            This is a solution to the Huddle Landing Page with Single Introductory Section challenge on Frontend Mentor. Users should be able to view the optimal layout for the page depending on their device's screen size and see hover states for all interactive elements on the page.
+                        </p>
+                        <p>Built with: HTML and CSS.</p>
+                    </div>
+                </div>
+                <div class="project-container flex-column">
+                    <div class="project-img-container">
+                        <img src="./src/imagens/nft-2.png" alt="NFT Card">
+                        <a href="https://carolinaciolin.github.io/nft-preview-card/" target="_blank" class="github-link">
+                            🔗 Ver no GitHub Pages
+                        </a>
+                    </div>
+                    
+                    <div class="project-description flex-column">
+                        <h3>NFT Card</h3>
+                        <p>
+                            This is a solution to the NFT Preview Card Component challenge on Frontend Mentor. Users should be able to view the optimal layout depending on their device's screen size and see hover states for interactive elements.
+                        </p>
+                        <p>Built with: HTML and CSS.</p>
+                    </div>
+                </div>
+                <div class="project-container flex-column">
+                    <div class="project-img-container">
+                        <img src="./src/imagens/advice-2.png" alt="Advice Generator">
+                        <a href="https://carolinaciolin.github.io/advice-generator/" target="_blank" class="github-link">
+                            🔗 Ver no GitHub Pages
+                        </a>
+                    </div>
+                    
+                    <div class="project-description flex-column">
+                        <h3>Advice Generator</h3>
+                        <p>
+                            This is a solution to the Advice generator app challenge on Frontend Mentor. Users should be able to view the optimal layout for the page depending on their device's screen size and see hover states for all interactive elements on the page.
+                        </p>
+                        <p>Built with: HTML and CSS.</p>
+                    </div>
+                </div>
+                <div class="project-container flex-column">
+                    <div class="project-img-container">
+                        <img src="./src/imagens/agencia-xyz-2.png" alt="Agência XYZ">
+                        <a href="https://carolinaciolin.github.io/dev-quest/landing-page-project/index.html" target="_blank" class="github-link">
+                            🔗 Ver no GitHub Pages
+                        </a>
+                    </div>
+                    
+                    <div class="project-description flex-column">
+                        <h3>Agência XYZ</h3>
+                        <p>
+                            This is a challenge proposed by the Dev Quest course and built using CSS Grid concepts. Users should be able to view the optimal layout for the page depending on their device's screen size and see hover states for all interactive elements on the page.
+                        </p>
+                        <p>Built with: HTML and CSS.</p>
+                    </div>
+                </div>
+                <div class="project-container flex-column">
+                    <div class="project-img-container">
+                        <img src="./src/imagens/sunnyside.png" alt="Sunnyside Agency">
+                        <a href="https://carolinaciolin.github.io/sunnyside-landing-page/" target="_blank" class="github-link">
+                            🔗 Ver no GitHub Pages
+                        </a>
+                    </div>
+                    
+                    <div class="project-description flex-column">
+                        <h3>Sunnyside Agency</h3>
+                        <p>
+                            This is a solution to the Sunnyside Agency landing page challenge on Frontend Mentor. Users should be able to view the optimal layout for the page depending on their device's screen size and see hover states for all interactive elements on the page.
+                        </p>
+                        <p>Built with: HTML and CSS.</p>
+                    </div>
+                </div>             
             </div>
-          </a>
-        </div>
-
-        <div class="projeto">
-          <a href="https://www.behance.net/gallery/184893363/Louis" target="_blank">
-            <img
-              src="./src/imagens/loius-cropped.png"
-              alt="Project Louis"
-            />
-            <h3>Louis</h3>
-            <div class="informacoes-projeto">
-              <p>Louis</p>
-              <p>🔗 Ver no Behance</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="projeto">
-          <a href="https://www.behance.net/gallery/192269831/Aphelios" target="_blank">
-            <img
-              src="./src/imagens/aphelios-3.jpg"
-              alt="Project Aphelios"
-            />
-            <h3>Aphelios</h3>
-            <div class="informacoes-projeto">
-              <p>Aphelios</p>
-              <p>🔗 Ver no Behance</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="projeto">
-          <a href="https://www.behance.net/gallery/173458249/Rusty-Lake" target="_blank">
-            <img
-              src="./src/imagens/rusty lake-3.png"
-              alt="Project Rusty Lake"
-            />
-            <h3>Rusty Lake</h3>
-            <div class="informacoes-projeto">
-              <p>Rusty Lake</p>
-              <p>🔗 Ver no Behance</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="projeto">
-          <a href="https://www.behance.net/gallery/173457949/Fairy" target="_blank">
-            <img
-              src="./src/imagens/fairy.png"
-              alt="Project Fairy"
-            />
-            <h3>Fairy</h3>
-            <div class="informacoes-projeto">
-              <p>Fairy</p>
-              <p>🔗 Ver no Behance</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <button class="btn-mostrar-projetos">Show more</button>
-    </section>
-
-    <script src="./src/js/index.js"></script>
-
-  </body>
+        </section>
+    </main>
+    <footer class="flex-column">
+        <p>Contact Me</p>
+        <nav class="social-media">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/carolinaciolin/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/CarolinaCiolin" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/carolinaciolin" target="_blank">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/carolinaciolin/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <address>
+            <a href="mailto:carolinaciolin@gmail.com" class="email">carolinaciolin@gmail.com</a>
+        </address>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Playwrite+AU+VIC&family=Playwrite+NG+Modern&family=Playwrite+NZ&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+html{
+    color: #fff;
+    font-size: 62.5%;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    font-family: var(--font-primary);
+}
+
+body{
+    background-color: var(--color-dark-gray);
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+h2{
+    font-size: 4rem;
+    text-align: center;
+    font-family: var(--font-secondary);
+    color: var(--color-dark-red);
+    margin-bottom: 30px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    transition: 0.3s;
+}
+
+main{
+    padding: 0 30px;
+}
+
+section{
+    margin-bottom: 90px;
+}
+
+.max-w-1200{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media > ul{
+    display: flex;
+    gap: 30px;
+    font-size: 2.8rem;
+    line-height: 4rem;
+}
+
+.social-media a i{
+    transition: 0.3s;
+}
+
+.social-media a i:hover{
+    color: var(--color-dark-red);
+    transform: scale(1.4);
+}
+
+.email:hover{
+    color: var(--color-dark-red);
+}
+  

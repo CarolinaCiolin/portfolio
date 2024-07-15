@@ -1,0 +1,83 @@
+.about-me-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container > .illustrations{
+    animation: illustrations-animation 10s infinite;
+    width: 280px;
+    height: 280px;
+}
+
+@keyframes illustrations-animation{
+
+    0% {
+        background: url('../imagens/bulbasaur.png') no-repeat top / cover;
+	}
+
+	20% {
+        background: url('../imagens/lara-rusty-lake.png') no-repeat center / cover;
+	}
+
+	40% {
+        background: url('../imagens/alyssa.png') no-repeat center / cover;
+	}
+
+	60% {
+        background: url('../imagens/bucky.png') no-repeat center / cover;
+	}
+
+    80% {
+        background: url('../imagens/fairy.png') no-repeat center / cover;
+	}
+
+	100% {
+        background: url('../imagens/bulbasaur.png') no-repeat top / cover;
+	}
+}
+
+.about-me-container > .about-me-info{
+    max-width: 740px;
+    gap: 20px;
+}
+
+.about-me-container > .about-me-info > p{
+    font-size: 1.6rem;
+}
+
+.about-me-container > .about-me-info > .btn-cv{
+    font-size: 1.6rem;
+    background-color: var(--color-dark-gray);
+    width: 200px;
+    font-weight: 800;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 30px;
+    border: 2px solid var(--color-dark-red);
+    color: var(--color-dark-red);
+}
+
+.about-me-container > .about-me-info > .btn-cv:hover{
+    background-color: var(--color-dark-red);
+    color: var(--color-dark-gray);
+}
+
+
+@media(max-width: 1150px){
+
+    .about-me-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-me-info{
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-me-container > .about-me-info > .btn-cv{
+        margin-top: 20px;
+    }
+}

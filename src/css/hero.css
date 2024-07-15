@@ -1,0 +1,100 @@
+#hero{
+    height: 85vh;
+    align-items: center;
+}
+
+.hero-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-container > .hero-info{
+    gap: 20px;
+}
+
+.hero-container > .hero-info > h1{
+    font-size: 4rem;
+    font-family: var(--font-secondary);
+}
+
+.hero-container > .hero-info > p{
+    font-size: 2.4rem;
+}
+
+.hero-container > .profile-picture-bg{
+	background: linear-gradient(to right, var(--color-pink), var(--color-dark-red), #000);
+	background-size: 180% 180%;
+	animation: gradient-animation 5s ease alternate infinite;
+    border-radius: 50%;
+    max-width: 400px;
+}
+
+.hero-container > .profile-picture-bg > .profile-picture{
+    border-radius: 50%;
+}
+
+@keyframes gradient-animation{
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.fas.fa-arrow-down{
+    font-size: 4rem;
+    background: -webkit-linear-gradient(var(--color-pink), var(--color-dark-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	background-size: 100% 100%;
+	animation: arrow 0.6s infinite alternate ease-in-out;
+}
+
+@-webkit-keyframes arrow{
+    0% { -webkit-transform: translateY(-0.8em); opacity: 0.2;}
+    100% { -webkit-transform: translateY(0.4em); opacity: 0.9;}
+}
+
+@media(max-width: 900px){
+
+    #hero{
+        margin-top: 35px;
+        height: auto;
+    }
+
+    @-webkit-keyframes arrow{
+        0% { -webkit-transform: translateY(0em); opacity: 0.2;}
+        100% { -webkit-transform: translateY(0.8em); opacity: 0.9;}
+    }
+
+    .hero-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero-container > .profile-picture-bg{
+        max-width: 310px;
+    }
+
+    .hero-container > .hero-info{
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-container > .hero-info > h1{
+        font-size: 3rem;
+    }
+    
+    .hero-container > .hero-info > p{
+        font-size: 2rem;
+    }
+}

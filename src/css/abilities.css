@@ -1,0 +1,39 @@
+.abilities-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.abilities-item{
+    border: 1px solid var(--color-dark-red);
+    padding: 20px;
+    transition: 0.5s;
+    width: 345px;
+    height: 325px;
+    align-items: center;
+    background-color: #000;
+}
+
+.abilities-item:hover{
+    transform: scale(1.05);
+    background-color: var(--color-red-opacity);
+}
+
+.abilities-container > .abilities-item > i{
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.abilities-container > .abilities-item > h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.abilities-container > .abilities-item > ul{
+    list-style: square inside;
+    align-self: flex-start;
+    height: 100%;
+    gap: 5px;
+}
